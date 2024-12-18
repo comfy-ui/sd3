@@ -1,2 +1,2 @@
 #!/bin/bash
-python /app/app.py
+python /app/main.py --listen=0.0.0.0 --port 8765
