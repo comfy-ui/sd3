@@ -1,0 +1,36 @@
+{
+  "machine": {
+    "gpu": 1,
+    "cpu": 1000,
+    "ram": 100
+  },
+  "job": {
+    "APIVersion": "V1beta1",
+    "Spec": {
+      "Deal": {
+        "Concurrency": 1
+      },
+      "Docker": {
+        "Entrypoint": [
+          "./app.sh"
+          ],
+        "Image": "arsen3d/ai-oncologist:latest",
+        "EnvironmentVariables": [
+          {{.ENV}}
+        ]
+      },
+      "Engine": "Docker",
+      "Network": {
+        "Type": "Full"
+      },
+      "PublisherSpec": {
+        "Type": "IPFS"
+      },
+      "Resources": {
+        "GPU": "1"
+      },
+      "Timeout": 300,
+      "Verifier": "Noop"
+    }
+  }
+}
