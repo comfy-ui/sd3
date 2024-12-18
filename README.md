@@ -1,1 +1,2 @@
-# lilypad-gradio-template
+# Stable Diffusion 3
+## ComfyUI Workflow
