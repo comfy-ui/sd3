@@ -2,7 +2,7 @@
 
 services:
   gradio:
-    image: arsen3d/ai-oncologist:latest
+    image: arsen3d/sd3:latest
     build: .
     command: ./app.sh
     environment:
